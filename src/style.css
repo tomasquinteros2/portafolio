@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    border:0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: #fcfcfc;
+    z-index: 1;
+    font-family: "Roboto", sans-serif;
+  }
+.backgroundDiv {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../public/img/Fondo-portafolio.jpg');
+    background-size: cover;
+    z-index: -1;
+}
+/*.backgroundDiv::before {
+    content: "";
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    backdrop-filter: blur(3px)
+  }*/
+header{
+    position: relative;
+    top: 0;
+    width: 100%;
+    background: transparent;
+}
+.navBar{
+    display: flex;
+    padding: 40px;
+    padding-left: 20%;
+    padding-right: 20%;
+    justify-content:center;
+}
+.navBar .container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.navBar .container .container-buttons{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+.buttons-list{
+    display: flex;
+    list-style-type:none;
+}
+.li-item{
+    margin: 10px;
+    cursor: pointer;
+}
+.li-item .line {
+    margin-top: 2px;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+  }
+  
+.li-item:hover .line {
+    width: 100%;
+}
+.container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.container .content{
+    width: 50%;
+}
+
+.title{
+    height: 50px;
+    font-size: 35px;
+}
+.subtitle{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.text{
+    color: #c7c2c2;
+    margin-bottom: 20px;
+    line-height: 2;
+}
+.link{
+    display: flex;
+    gap: 20px;
+}
+.link-item{
+    fill: currentColor;
+    margin: 10px;
+}
+.article{
+    position: relative;
+    padding-left: 20px;
+}
+.float-right{
+    float: right;
+}
+a.float-right{
+    text-decoration: underline;
+}
+.lineAbout{
+    content: " ";
+    background: rgb(236, 227, 227);
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    width: 1px;
+    top: 4px;
+    height: 100%;
+    z-index: 400;
+}
+.circle{
+    content: " ";
+    background: rgb(14, 13, 13);
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid rgb(236, 227, 227);
+    left: -7px;
+    width: 15px;
+    height: 15px;
+    margin-top: 3px;
+    z-index: 400;
+}
+.article .text{
+    margin-top: 10px;
+}
+.proyects{
+    width: 100%;
+    display: flex;
+}
+.card {
+    width: 35%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+  
+.card:hover {
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+cursor: pointer;
+scale: 1.1;
+}
+  
+.container {
+padding: 2px 16px;
+}
+.card img{
+    width: 100%;
+}
